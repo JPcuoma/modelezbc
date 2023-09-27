@@ -14,7 +14,7 @@ a {
 
 @font-face {
   font-family: "MDLZ";
-  src: local("MDLZ"), url("/fonts/MDLZ-Regular.otf") format("opentype"), url("/fonts/MDLZ-Regular.ttf") format("woff");
+  src: local("MDLZ"), url("../fonts/MDLZ-Regular.otf") format("opentype"), url("../fonts/MDLZ-Regular.ttf") format("woff");
 }
 /* colores */
 .blue {
@@ -42,7 +42,7 @@ a {
 }
 
 header {
-  background: url("/img/home-bg.jpg");
+  background: url("../img/home-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #4e246e;
@@ -82,7 +82,7 @@ header .container #searchWrapper button[type=submit] {
   padding: 0;
   margin: 0;
   border: 1px solid transparent;
-  background: url(/img/search.svg) no-repeat;
+  background: url(../img/search.svg) no-repeat;
   cursor: pointer;
   position: absolute;
   top: 10px;
