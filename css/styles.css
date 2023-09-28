@@ -12,6 +12,12 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 22px;
+  }
+}
+
 @font-face {
   font-family: "MDLZ";
   src: local("MDLZ"), url("../fonts/MDLZ-Regular.otf") format("opentype"), url("../fonts/MDLZ-Regular.ttf") format("woff");
@@ -148,7 +154,6 @@ header .container #searchWrapper button[type=submit] {
   #home-categorias #categorias {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    padding: 0 20px;
     margin-top: 30px;
   }
 }
@@ -177,7 +182,7 @@ header .container #searchWrapper button[type=submit] {
     min-height: 65px !important;
   }
   #home-categorias #categorias a h3 {
-    font-size: 22px;
+    font-size: 22px !important;
     line-height: 24px;
   }
 }
@@ -331,10 +336,5 @@ header .container #searchWrapper button[type=submit] {
   }
   #content .container .content-wrapper #result p {
     font-size: 15px;
-  }
-}
-@media (max-width: 768px) {
-  #content .container {
-    padding: 0 22px;
   }
 }/*# sourceMappingURL=styles.css.map */

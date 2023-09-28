@@ -9,7 +9,11 @@ p , h1, h2, h3 {
 a{
     text-decoration:none;
 }
-
+.container{
+    @media(max-width:768px){
+        padding:0 22px;
+    }
+}
 @font-face {
     font-family: "MDLZ";
     src:
@@ -143,7 +147,6 @@ header {
         @media(max-width:768px){
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(6, 1fr);
-            padding: 0 20px;
             margin-top: 30px;
         }
         .box{
@@ -170,7 +173,7 @@ header {
             a{
                 min-height:65px !important;
                 h3{
-                    font-size: 22px;
+                    font-size: 22px !important;
                     line-height: 24px;
                 }
             }
@@ -333,8 +336,6 @@ header {
                 
             }
         }
-        @media(max-width:768px){
-            padding:0 22px;
-        }
+        
     }
 }
