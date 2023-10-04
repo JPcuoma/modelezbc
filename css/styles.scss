@@ -227,7 +227,7 @@ header {
                     max-width: 315px;
                     @media(max-width:768px){
                         height:60px !important;
-                        
+                        padding:0 10px;
                         font-size: 15px;
                         text-align: center;
                         line-height: 18px;
@@ -239,7 +239,7 @@ header {
                             display:none;
                         }
                         .link-label{
-                            width:98px;
+                            width:103px;
                         }
                     }
                     &.blue{
@@ -382,6 +382,16 @@ header {
                             }
                         }
                         @media(max-width:768px){
+                            border-bottom:none;
+                            .link-label{
+                                color:#fff;
+                            }
+                            background:$naranja;
+                            svg path{
+                                fill:#fff !important;
+                            }
+                        }
+                        &.active{
                             border-bottom:none;
                             .link-label{
                                 color:#fff;
@@ -584,5 +594,32 @@ header {
             }
         }
         
+    }
+}
+footer{
+ height:50px;
+ background:$purple;
+ display:flex;
+ justify-content: center;   
+ margin-top:200px;
+ width:100%;
+ position: relative;
+ &:before{
+    content: "";
+    background: url(/img/footer-border.jpg);
+    position: absolute;
+    width: 100%;
+    height: 21px;
+    top: -21px;
+ }
+    p{
+        color:#fff;   
+        padding-top: 10px !important;
+        font-size: 18px;
+    }
+    @media(max-width:768px) {
+        p{
+            font-size: 14px;
+        }
     }
 }

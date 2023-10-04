@@ -238,6 +238,7 @@ header .container #searchWrapper button[type=submit] {
 @media (max-width: 768px) {
   #content .container .content-wrapper #menu a {
     height: 60px !important;
+    padding: 0 10px;
     font-size: 15px;
     text-align: center;
     line-height: 18px;
@@ -250,7 +251,7 @@ header .container #searchWrapper button[type=submit] {
     display: none;
   }
   #content .container .content-wrapper #menu a .link-label {
-    width: 98px;
+    width: 103px;
   }
 }
 #content .container .content-wrapper #menu a.blue {
@@ -412,6 +413,16 @@ header .container #searchWrapper button[type=submit] {
   #content .container .content-wrapper #menu a.orange svg path {
     fill: #fff !important;
   }
+}
+#content .container .content-wrapper #menu a.orange.active {
+  border-bottom: none;
+  background: #DA8433;
+}
+#content .container .content-wrapper #menu a.orange.active .link-label {
+  color: #fff;
+}
+#content .container .content-wrapper #menu a.orange.active svg path {
+  fill: #fff !important;
 }
 #content .container .content-wrapper #menu a.green {
   border-bottom: 7px solid #2F783E;
@@ -592,5 +603,33 @@ header .container #searchWrapper button[type=submit] {
   }
   #content .container .content-wrapper #result p {
     font-size: 15px;
+  }
+}
+
+footer {
+  height: 50px;
+  background: #4e246e;
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  width: 100%;
+  position: relative;
+}
+footer:before {
+  content: "";
+  background: url(/img/footer-border.jpg);
+  position: absolute;
+  width: 100%;
+  height: 21px;
+  top: -21px;
+}
+footer p {
+  color: #fff;
+  padding-top: 10px !important;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  footer p {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=styles.css.map */
