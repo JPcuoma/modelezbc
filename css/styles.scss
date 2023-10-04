@@ -61,6 +61,17 @@ header {
     width: 100%;
     display:Flex;
     align-items: center;
+    position: relative;
+    &:after{
+        content: "";
+        background: url(../img/banner-top-border.svg);
+        position: absolute;
+        bottom: -1px;
+        width: 100%;
+        background-size: cover;
+        height: 21px;
+        background-repeat: no-repeat;
+    }
     @media(max-width:550px){
         height:371;
         background:url('../img/bg-mobile.png')
@@ -606,7 +617,7 @@ footer{
  position: relative;
  &:before{
     content: "";
-    background: url(/img/footer-border.jpg);
+    background: url(../img/footer-border.jpg);
     position: absolute;
     width: 100%;
     height: 21px;
